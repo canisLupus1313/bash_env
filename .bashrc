@@ -5,7 +5,6 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-#PS1='\[\e[1;31m\]\u\[\e[1;33m\]@\[\e[0;34m\]\h\[\e[1;33m\]:\[\e[1;34m\]\W\[\e[1;31m\]\$ \[\e[1;37m\]'
 # User specific aliases and functions
 PS1="\n\[\e[1;37m\](\[\e[01;34m\]\u@\h\[\e[1;37m\])(\$(if [[ \$? == 0 ]]; then echo '\[\e[0;32m\]\342\234\223'; else echo '\[\e[0;31m\]\342\234\227'; fi)\[\e[1;37m\])(\[\e[1;34m\]\t\[\e[1;37m\])\[\e[1;37m\]\n(\[\e[1;32m\]\W\[\e[1;37m\])\[\e[1;31m\]\$\[\e[0m\]"
 
@@ -65,7 +64,6 @@ alias cd=cd_func
 alias ls='ls --color'
 alias ll='ls -lah'
 alias grep='grep --color'
-source "$HOME/.cargo/env" 
 export PATH=$PATH:$HOME/.local/bin
 source /usr/share/bash-completion/completions/git
 
