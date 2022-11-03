@@ -1,4 +1,7 @@
 # .bashrc
+# Copyright (c) 2022 Przemyslaw Bida prbida@gmail.com
+#
+# SPDX-License-Identifier: Apache-2.0
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
